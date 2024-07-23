@@ -1,0 +1,4 @@
+<h1><%= @gossip.title %></h1>
+<p><%= @gossip.content %></p>
+<p>By <%= @gossip.author.first_name %> on <%= @gossip.created_at.strftime("%d %B %Y") %></p>
+<a href="<%= user_path(@gossip.author) %>">Voir le profil de l'auteur</a>
